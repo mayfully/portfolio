@@ -1,0 +1,265 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 
+(http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1em;
+  font-family: 'Noto Sans KR', Arial, sans-serif;
+    font-weight: normal;
+  vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* END RESET CODE */
+
+
+
+/* section 1 */
+.main_banner {
+  position: relative;
+  width: 100%;
+  background-color: #fafafa;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.main_banner nav {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: right;
+  position: fixed;
+  background-color: rgba(255,255,255,0.6);
+}
+
+.main_banner nav h1 {
+  position: absolute;
+  top: 0;
+  text-align: left;
+  margin: 0 0 0 50px; 
+  font-size: 22px;
+}
+
+.main_banner nav h1 a {
+  font-family: 'Lora', serif;
+  color: #7aada6;
+  cursor: pointer;
+}
+
+.main_banner nav ul {
+  display: inline-block;
+}
+
+.main_banner nav ul li {
+  float: left;
+  font-size: 16px;
+  color: #333333;
+  margin: 0 50px 0 0;
+}
+
+.main_banner nav ul li a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main_banner nav ul li a:hover {
+  color: #7aada6;
+  text-decoration: none;
+}
+
+.main_banner nav ul li:hover {
+  border-bottom: 2px solid #7aada6;
+}
+
+.main_banner nav ul li a:active {
+  color: #7aada6;
+  text-decoration: none;
+}
+s
+.main_banner nav ul li:active {
+  border-bottom: 2px solid #7aada6;
+}
+
+.main_banner .banner_text {
+  text-align: right;
+}
+
+.main_banner .banner_text p {
+  font-size: 30px;
+  color: #333333;
+  font-family: 'Lora', serif;
+  letter-spacing: 2px;
+  line-height: 42px;
+  margin: 350px 50px; 
+}
+
+.main_banner .banner_text p .highlight {
+  background-color: #c0eae4;
+  font-family: 'Lora', serif;
+  font-style: bold;
+}
+
+/* section 2 */
+
+.aboutme {
+  background-color: #ececec;
+  text-align: center;
+  padding: 80px 0; 
+}
+
+.aboutme h1 {
+  font-size: 22px;
+  font-family: 'Lora', serif;
+  color: #333333;
+  letter-spacing: 2px;
+}
+
+.aboutme p {
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0 auto;
+  width: 60%;
+  padding-top: 50px;
+  color: #333333;
+}
+
+/* section 3 */
+
+.portfolio_area {
+  text-align: center;
+  padding-top: 80px;
+  margin-bottom: 30px;
+}
+
+.portfolio_area .container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.portfolio_area .container h1 {
+  font-size: 22px;
+  font-family: 'Lora', serif;
+  color: #333333;
+  letter-spacing: 2px;
+}
+
+.portfolio_area .container .pf_list {
+  height: 600px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.portfolio_area .container .pf_list .left_area {
+  width: 50%;
+  height: 600px;
+  //background-position: center;
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  margin: 0;
+  float: left;
+  background-color: #e8ecef;
+}
+
+.portfolio_area .container .pf_list .left_area_01 {
+  //background-image: url(../img/01.jpg);
+} 
+
+.portfolio_area .container .pf_list .right_area {
+  float: right;
+  position: relative;
+  top: 30%;
+  width: 50%;
+  text-align: left;
+}
+.portfolio_area .container .pf_list .right_area .info {
+  margin: 0 50px;
+}
+
+.portfolio_area .container .pf_list .right_area .info h2 {
+  color: #666666;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.portfolio_area .container .pf_list .right_area .info h5 {
+  color: #999999;
+  font-size: 12px;
+  font-family: 'Lora', serif;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+.portfolio_area .container .pf_list .right_area .info p {
+  color: #666666;
+  font-size: 16px;
+  line-height: 26px;
+  padding-top: 10px;
+}
+
+footer {
+  background-color: #444444;
+  text-align: center;
+  height: 110px;
+}
+
+footer .contact_info {
+  float: right;
+  text-align: right;
+  line-height: 24px;
+  vertical-align: middle;
+}
+
+footer .contact_info h3 {
+  font-size: 16px;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 1px;
+}
+
+footer .contact_info p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 1px;
+  font-weight: 300;
+}
