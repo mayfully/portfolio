@@ -4,7 +4,7 @@
   color: #ffffff; }
 
 /* line 19, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
-.indicator, #slider-wrapper .inner-wrapper #s1, #slider-wrapper .inner-wrapper #s2, #slider-wrapper .inner-wrapper #s3, #slider-wrapper .inner-wrapper #s4, #slider-wrapper .inner-wrapper #s5, #slider-wrapper .inner-wrapper #s6, #slider-wrapper .inner-wrapper #s7, #slider-wrapper .inner-wrapper #s8, #slider-wrapper .inner-wrapper #s9 {
+.indicator, #slider-wrapper .inner-wrapper #s1, #slider-wrapper .inner-wrapper #s2, #slider-wrapper .inner-wrapper #s3, #slider-wrapper .inner-wrapper #s4, #slider-wrapper-1 .inner-wrapper #s5, #slider-wrapper-1 .inner-wrapper #s6, #slider-wrapper-2 .inner-wrapper #s7, #slider-wrapper-2 .inner-wrapper #s8, #slider-wrapper-2 .inner-wrapper #s9 {
   padding: 6px;
   background: #999999;
   position: absolute;
@@ -393,25 +393,10 @@ body::-webkit-scrollbar-track {
     /* line 386, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
     #slider-wrapper .inner-wrapper #s4 {
       margin-left: 36px; }
-    /* line 390, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
-    #slider-wrapper .inner-wrapper #s5 {
-      margin-left: -36px; }
-    /* line 394, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
-    #slider-wrapper .inner-wrapper #s6 {
-      margin-left: -12px; }
-    /* line 398, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
-    #slider-wrapper .inner-wrapper #s7 {
-      margin-left: -36px; }
-    /* line 402, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
-    #slider-wrapper .inner-wrapper #s8 {
-      margin-left: -12px; }
-    /* line 406, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
-    #slider-wrapper .inner-wrapper #s9 {
-      margin-left: 12px; }
-    /* line 411, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
-    #slider-wrapper .inner-wrapper #s1:hover, #slider-wrapper .inner-wrapper #s2:hover, #slider-wrapper .inner-wrapper #s3:hover, #slider-wrapper .inner-wrapper #s4:hover #s5:hover, #slider-wrapper .inner-wrapper #s6:hover, #slider-wrapper .inner-wrapper #s7:hover, #slider-wrapper .inner-wrapper #s8:hover, #slider-wrapper .inner-wrapper #s9:hover {
+    /* line 391, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper .inner-wrapper #s1:hover, #slider-wrapper .inner-wrapper #s2:hover, #slider-wrapper .inner-wrapper #s3:hover, #slider-wrapper .inner-wrapper #s4:hover {
       opacity: .50; }
-    /* line 414, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    /* line 394, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
     #slider-wrapper .inner-wrapper .overflow-wrapper {
       width: 400%;
       height: 100%;
@@ -424,48 +409,160 @@ body::-webkit-scrollbar-track {
       -moz-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
-      /* line 426, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+      /* line 406, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
       #slider-wrapper .inner-wrapper .overflow-wrapper .slide img {
         width: 25%;
         float: left; }
+  /* line 414, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  #slider-wrapper #Slide1:checked ~ .overflow-wrapper {
+    margin-left: 0%; }
+  /* line 418, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  #slider-wrapper #Slide2:checked ~ .overflow-wrapper {
+    margin-left: -100%; }
+  /* line 422, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  #slider-wrapper #Slide3:checked ~ .overflow-wrapper {
+    margin-left: -200%; }
+  /* line 426, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  #slider-wrapper #Slide4:checked ~ .overflow-wrapper {
+    margin-left: -300%; }
+  /* line 430, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  #slider-wrapper #Slide1:checked + #s1, #slider-wrapper #Slide2:checked + #s2, #slider-wrapper #Slide3:checked + #s3, #slider-wrapper #Slide4:checked + #s4 {
+    opacity: 1; }
 
-/* line 434, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
-#Slide1:checked, #Slide5:checked, #Slide7:checked ~ .overflow-wrapper {
-  margin-left: 0%; }
+/* line 435, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+#slider-wrapper-1 {
+  width: 50%;
+  height: 600px;
+  position: relative;
+  margin-bottom: 0px;
+  background: #e8ecef;
+  overflow: hidden;
+  float: left; }
+  /* line 444, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  #slider-wrapper-1 .inner-wrapper {
+    width: 70%;
+    height: 570px;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    margin-bottom: 0px;
+    overflow: hidden; }
+    /* line 452, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper-1 .inner-wrapper .control {
+      display: none; }
+    /* line 455, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper-1 .inner-wrapper #s5 {
+      margin-left: -24px; }
+    /* line 464, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper-1 .inner-wrapper #s5:hover, #slider-wrapper-1 .inner-wrapper #s6:hover {
+      opacity: .50; }
+    /* line 467, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper-1 .inner-wrapper .overflow-wrapper {
+      width: 400%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow-y: hidden;
+      z-index: 1;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      /* line 479, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+      #slider-wrapper-1 .inner-wrapper .overflow-wrapper .slide img {
+        width: 25%;
+        float: left; }
+  /* line 487, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  #slider-wrapper-1 #Slide5:checked ~ .overflow-wrapper {
+    margin-left: 0%; }
+  /* line 491, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  #slider-wrapper-1 #Slide6:checked ~ .overflow-wrapper {
+    margin-left: -100%; }
+  /* line 495, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  #slider-wrapper-1 #Slide5:checked + #s5, #slider-wrapper-1 #Slide6:checked + #s6 {
+    opacity: 1; }
 
-/* line 438, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
-#Slide2:checked, #Slide6:checked, #Slide8:checked ~ .overflow-wrapper {
-  margin-left: -100%; }
-
-/* line 442, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
-#Slide3:checked, #Slide9:checked ~ .overflow-wrapper {
-  margin-left: -200%; }
-
-/* line 446, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
-#Slide4:checked ~ .overflow-wrapper {
-  margin-left: -300%; }
-
-/* line 450, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
-#Slide1:checked + #s1, #Slide2:checked + #s2, #Slide3:checked + #s3, #Slide4:checked + #s4, #Slide5:checked + #s5, #Slide6:checked + #s6, #Slide7:checked + #s7, #Slide8:checked + #s8, #Slide9:checked + #s9 {
-  opacity: 1; }
+/* line 500, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+#slider-wrapper-2 {
+  width: 50%;
+  height: 600px;
+  position: relative;
+  margin-bottom: 0px;
+  background: #e8ecef;
+  overflow: hidden;
+  float: left; }
+  /* line 509, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  #slider-wrapper-2 .inner-wrapper {
+    width: 70%;
+    height: 570px;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    margin-bottom: 0px;
+    overflow: hidden; }
+    /* line 517, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper-2 .inner-wrapper .control {
+      display: none; }
+    /* line 520, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper-2 .inner-wrapper #s7 {
+      margin-left: -36px; }
+    /* line 524, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper-2 .inner-wrapper #s8 {
+      margin-left: -12px; }
+    /* line 528, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper-2 .inner-wrapper #s9 {
+      margin-left: 12px; }
+    /* line 532, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper-2 .inner-wrapper #s7:hover, #slider-wrapper-2 .inner-wrapper #s8:hover, #slider-wrapper-2 .inner-wrapper #s9:hover {
+      opacity: .50; }
+    /* line 535, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper-2 .inner-wrapper .overflow-wrapper {
+      width: 400%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow-y: hidden;
+      z-index: 1;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      /* line 547, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+      #slider-wrapper-2 .inner-wrapper .overflow-wrapper .slide img {
+        width: 25%;
+        float: left; }
+  /* line 555, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  #slider-wrapper-2 #Slide7:checked ~ .overflow-wrapper {
+    margin-left: 0%; }
+  /* line 559, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  #slider-wrapper-2 #Slide8:checked ~ .overflow-wrapper {
+    margin-left: -100%; }
+  /* line 563, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  #slider-wrapper-2 #Slide9:checked ~ .overflow-wrapper {
+    margin-left: -200%; }
+  /* line 567, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  #slider-wrapper-2 #Slide7:checked + #s7, #slider-wrapper-2 #Slide8:checked + #s8, #slider-wrapper-2 #Slide9:checked + #s9 {
+    opacity: 1; }
 
 /* Footer */
-/* line 456, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+/* line 574, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 footer {
   height: 120px;
   background-color: #444444;
   text-align: center; }
-  /* line 460, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  /* line 578, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
   footer .contact_info {
     float: right;
     text-align: right;
     padding: 30px 50px 0 0; }
-    /* line 464, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    /* line 582, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
     footer .contact_info h3 {
       font-size: 16px;
       letter-spacing: 1px;
       color: #ffffff; }
-    /* line 469, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    /* line 587, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
     footer .contact_info p, footer .contact_info a {
       font-size: 14px;
       line-height: 24px;
