@@ -1,14 +1,26 @@
-/* line 14, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 14, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 ::selection {
   background: #7aada6;
   color: #ffffff; }
+
+/* line 19, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+.indicator, #slider-wrapper .inner-wrapper #s1, #slider-wrapper .inner-wrapper #s2, #slider-wrapper .inner-wrapper #s3, #slider-wrapper .inner-wrapper #s4, #slider-wrapper .inner-wrapper #s5, #slider-wrapper .inner-wrapper #s6, #slider-wrapper .inner-wrapper #s7, #slider-wrapper .inner-wrapper #s8, #slider-wrapper .inner-wrapper #s9 {
+  padding: 6px;
+  background: #999999;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  border-radius: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 999; }
 
 /**
  * Eric Meyer's Reset CSS v2.0 
 (http://meyerweb.com/eric/tools/css/reset/)
  * http://cssreset.com
  */
-/* line 36, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 48, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -32,61 +44,61 @@ time, mark, audio, video {
   text-decoration: none; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 48, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 60, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* line 51, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 63, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 body {
   font-family: 'Open Sans', sans-serif; }
 
-/* line 54, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 66, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 ol, ul {
   list-style: none; }
 
-/* line 57, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 69, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 blockquote, q {
   quotes: none; }
 
-/* line 61, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 73, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
 
-/* line 65, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 77, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
 /* END RESET CODE */
 /* scrollbar style : all */
-/* line 72, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 84, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 body::-webkit-scrollbar {
   width: 10px;
   background-color: #f6f6f6; }
 
-/* line 76, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 88, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 body::-webkit-scrollbar-thumb {
   background-color: #d5d5d5;
   border-radius: 12px;
   border: 2px solid #f6f6f6; }
 
-/* line 81, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 93, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 body::-webkit-scrollbar-thumb:hover {
   background-color: #999; }
 
-/* line 84, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 96, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 body::-webkit-scrollbar-thumb:active {
   background-color: #999; }
 
-/* line 87, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 99, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 body::-webkit-scrollbar-track {
   border-radius: 5px; }
 
 /* section 1 */
-/* line 93, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 105, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 .main_banner {
   position: relative;
   width: 100%;
@@ -94,7 +106,7 @@ body::-webkit-scrollbar-track {
   overflow: hidden;
   box-sizing: border-box;
   height: 100vh; }
-  /* line 100, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+  /* line 112, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
   .main_banner nav {
     position: fixed;
     top: 0;
@@ -106,52 +118,52 @@ body::-webkit-scrollbar-track {
     background-color: rgba(255, 255, 255, 0.6);
     text-align: right;
     z-index: 999; }
-    /* line 111, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+    /* line 123, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
     .main_banner nav h1 {
       display: inline-block;
       float: left;
       margin: 0 0 0 50px;
       font-size: 22px; }
-      /* line 116, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+      /* line 128, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
       .main_banner nav h1 a {
         font-family: "Lora", serif;
         color: #7aada6;
         cursor: pointer; }
-    /* line 122, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+    /* line 134, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
     .main_banner nav ul {
       display: inline-block;
       float: right; }
-      /* line 125, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+      /* line 137, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
       .main_banner nav ul li {
         float: left;
         font-size: 16px;
         color: #333333;
         margin: 0 50px 0 0;
         cursor: pointer; }
-        /* line 131, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+        /* line 143, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
         .main_banner nav ul li:hover {
           border-bottom: 2px solid #7aada6;
           color: #7aada6; }
-        /* line 135, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+        /* line 147, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
         .main_banner nav ul li:active {
           border-bottom: 2px solid #7aada6; }
-        /* line 138, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+        /* line 150, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
         .main_banner nav ul li a {
           color: rgba(0, 0, 0, 0.6); }
-          /* line 140, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+          /* line 152, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
           .main_banner nav ul li a:hover {
             color: #7aada6;
             text-decoration: none; }
-          /* line 144, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+          /* line 156, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
           .main_banner nav ul li a:active {
             color: #7aada6;
             text-decoration: none; }
 
-/* line 154, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 166, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 .main_banner .banner_text {
   display: inline-block;
   margin: 50%; }
-  /* line 157, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+  /* line 169, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
   .main_banner .banner_text h1 {
     position: absolute;
     top: 45%;
@@ -166,11 +178,11 @@ body::-webkit-scrollbar-track {
     width: 700px;
     padding: 0;
     animation: type 3.8s steps(60, end); }
-  /* line 171, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+  /* line 183, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
   .main_banner .banner_text h1:nth-child(2) {
     animation: type2 7.8s steps(60, end);
     margin-top: 50px; }
-  /* line 175, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+  /* line 187, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
   .main_banner .banner_text span {
     animation: blink 1s infinite;
     color: #7aada6; }
@@ -214,13 +226,13 @@ body::-webkit-scrollbar-track {
     margin-top: 20%;
     opacity: 0; } }
 
-/* line 205, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 217, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 .mouse-container {
   position: relative;
   display: block;
   height: 100px;
   top: 90vh; }
-  /* line 210, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+  /* line 222, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
   .mouse-container .mouse {
     position: relative;
     margin: 0 auto;
@@ -230,7 +242,7 @@ body::-webkit-scrollbar-track {
     border: 2px solid #7aada6;
     border-radius: 20px;
     opacity: .6; }
-    /* line 219, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+    /* line 231, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
     .mouse-container .mouse .scroll-down {
       display: block;
       width: 4px;
@@ -246,18 +258,18 @@ body::-webkit-scrollbar-track {
       animation-timing-function: ease; }
 
 /* section 2 */
-/* line 238, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 250, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 .aboutme {
   padding: 80px 0;
   text-align: center;
   background-color: #ececec; }
-  /* line 242, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+  /* line 254, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
   .aboutme h1 {
     font-family: "Lora", serif;
     font-size: 22px;
     letter-spacing: 2px;
     color: #333333; }
-  /* line 248, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+  /* line 260, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
   .aboutme p {
     width: 60%;
     margin: 0 auto;
@@ -267,29 +279,29 @@ body::-webkit-scrollbar-track {
     color: #333333; }
 
 /* section 3 */
-/* line 260, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 272, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 .portfolio_area {
   text-align: center;
   padding-top: 80px;
   margin-bottom: 30px; }
-  /* line 264, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+  /* line 276, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
   .portfolio_area .container {
     width: 100%;
     margin: 0 auto;
     padding: 0;
     position: relative; }
-    /* line 269, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+    /* line 281, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
     .portfolio_area .container h1 {
       font-family: "Lora", serif;
       font-size: 22px;
       letter-spacing: 2px;
       color: #333333; }
-  /* line 276, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+  /* line 288, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
   .portfolio_area .pf_list {
     height: 600px;
     position: relative;
     margin-top: 50px; }
-    /* line 280, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+    /* line 292, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
     .portfolio_area .pf_list .left_area {
       width: 50%;
       height: 600px;
@@ -299,48 +311,48 @@ body::-webkit-scrollbar-track {
       background-color: #e8ecef;
       background-position: center;
       background-repeat: no-repeat; }
-    /* line 291, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+    /* line 303, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
     .portfolio_area .pf_list .left_area_01 {
       background-image: url(../img/01.png);
       background-size: 60%; }
-    /* line 295, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+    /* line 307, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
     .portfolio_area .pf_list .left_area_02 {
       background-image: url(../img/02.png);
       background-color: #f5f2f2;
       background-size: 60%; }
-    /* line 300, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+    /* line 312, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
     .portfolio_area .pf_list .left_area_03 {
       background-image: url(../img/04.png);
       background-color: #e8ecef;
       background-size: 60%; }
-    /* line 305, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+    /* line 317, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
     .portfolio_area .pf_list .left_area_04 {
       background-image: url(../img/04.png);
       background-color: #f5f2f2;
       background-size: 80%; }
-    /* line 310, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+    /* line 322, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
     .portfolio_area .pf_list .right_area {
       position: relative;
       top: 30%;
       width: 50%;
       float: right;
       text-align: left; }
-      /* line 316, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+      /* line 328, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
       .portfolio_area .pf_list .right_area .info {
         margin: 0 50px; }
-        /* line 318, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+        /* line 330, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
         .portfolio_area .pf_list .right_area .info h2 {
           padding-bottom: 10px;
           font-size: 20px;
           color: #666666; }
-        /* line 323, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+        /* line 335, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
         .portfolio_area .pf_list .right_area .info h5 {
           padding-bottom: 10px;
           font-family: "Lora", serif;
           font-size: 12px;
           letter-spacing: 1px;
           color: #999999; }
-        /* line 330, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+        /* line 342, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
         .portfolio_area .pf_list .right_area .info p {
           padding-top: 10px;
           font-size: 16px;
@@ -348,7 +360,7 @@ body::-webkit-scrollbar-track {
           color: #666666; }
 
 /* slider */
-/* line 342, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 354, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 #slider-wrapper {
   width: 50%;
   height: 600px;
@@ -357,148 +369,103 @@ body::-webkit-scrollbar-track {
   background: #e8ecef;
   overflow: hidden;
   float: left; }
+  /* line 363, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  #slider-wrapper .inner-wrapper {
+    width: 70%;
+    height: 570px;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    margin-bottom: 0px;
+    overflow: hidden; }
+    /* line 371, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper .inner-wrapper .control {
+      display: none; }
+    /* line 374, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper .inner-wrapper #s1 {
+      margin-left: -36px; }
+    /* line 378, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper .inner-wrapper #s2 {
+      margin-left: -12px; }
+    /* line 382, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper .inner-wrapper #s3 {
+      margin-left: 12px; }
+    /* line 386, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper .inner-wrapper #s4 {
+      margin-left: 36px; }
+    /* line 390, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper .inner-wrapper #s5 {
+      margin-left: -36px; }
+    /* line 394, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper .inner-wrapper #s6 {
+      margin-left: -12px; }
+    /* line 398, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper .inner-wrapper #s7 {
+      margin-left: -36px; }
+    /* line 402, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper .inner-wrapper #s8 {
+      margin-left: -12px; }
+    /* line 406, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper .inner-wrapper #s9 {
+      margin-left: 12px; }
+    /* line 411, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper .inner-wrapper #s1:hover, #slider-wrapper .inner-wrapper #s2:hover, #slider-wrapper .inner-wrapper #s3:hover, #slider-wrapper .inner-wrapper #s4:hover #s5:hover, #slider-wrapper .inner-wrapper #s6:hover, #slider-wrapper .inner-wrapper #s7:hover, #slider-wrapper .inner-wrapper #s8:hover, #slider-wrapper .inner-wrapper #s9:hover {
+      opacity: .50; }
+    /* line 414, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    #slider-wrapper .inner-wrapper .overflow-wrapper {
+      width: 400%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow-y: hidden;
+      z-index: 1;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      /* line 426, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+      #slider-wrapper .inner-wrapper .overflow-wrapper .slide img {
+        width: 25%;
+        float: left; }
 
-/* line 353, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
-#s1, s5 {
-  padding: 6px;
-  background: #999999;
-  position: absolute;
-  left: 50%;
-  bottom: 25px;
-  margin-left: -36px;
-  border-radius: 20px;
-  opacity: 0.3;
-  cursor: pointer;
-  z-index: 999; }
-
-/* line 366, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
-#s2, s6 {
-  padding: 6px;
-  background: #999999;
-  position: absolute;
-  left: 50%;
-  bottom: 25px;
-  margin-left: -12px;
-  border-radius: 20px;
-  opacity: 0.3;
-  cursor: pointer;
-  z-index: 999; }
-
-/* line 379, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
-#s3, s7 {
-  padding: 6px;
-  background: #999999;
-  position: absolute;
-  left: 50%;
-  bottom: 25px;
-  margin-left: 12px;
-  border-radius: 20px;
-  opacity: 0.3;
-  cursor: pointer;
-  z-index: 999; }
-
-/* line 392, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
-#s4, s8 {
-  padding: 6px;
-  background: #999999;
-  position: absolute;
-  left: 50%;
-  bottom: 25px;
-  margin-left: 36px;
-  border-radius: 20px;
-  opacity: 0.3;
-  cursor: pointer;
-  z-index: 999; }
-
-/* line 408, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
-#s1:hover,
-#s2:hover,
-#s3:hover,
-#s4:hover {
-  opacity: .50; }
-
-/* line 412, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
-.inner-wrapper {
-  width: 70%;
-  height: 570px;
-  position: absolute;
-  top: 40px;
-  left: 100px;
-  margin-bottom: 0px;
-  overflow: hidden; }
-
-/* line 422, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
-.control {
-  display: none; }
-
-/* line 426, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
-#Slide1:checked ~ .overflow-wrapper {
+/* line 434, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+#Slide1:checked, #Slide5:checked, #Slide7:checked ~ .overflow-wrapper {
   margin-left: 0%; }
 
-/* line 430, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
-#Slide2:checked ~ .overflow-wrapper {
+/* line 438, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+#Slide2:checked, #Slide6:checked, #Slide8:checked ~ .overflow-wrapper {
   margin-left: -100%; }
 
-/* line 434, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
-#Slide3:checked ~ .overflow-wrapper {
+/* line 442, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+#Slide3:checked, #Slide9:checked ~ .overflow-wrapper {
   margin-left: -200%; }
 
-/* line 438, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 446, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 #Slide4:checked ~ .overflow-wrapper {
   margin-left: -300%; }
 
-/* line 442, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
-#Slide1:checked + #s1, #Slide5:checked + #s5, #Slide6:checked + #s6, #Slide7:checked + #s7, #Slide8:checked + #s8 {
+/* line 450, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+#Slide1:checked + #s1, #Slide2:checked + #s2, #Slide3:checked + #s3, #Slide4:checked + #s4, #Slide5:checked + #s5, #Slide6:checked + #s6, #Slide7:checked + #s7, #Slide8:checked + #s8, #Slide9:checked + #s9 {
   opacity: 1; }
-
-/* line 446, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
-#Slide2:checked + #s2 {
-  opacity: 1; }
-
-/* line 450, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
-#Slide3:checked + #s3 {
-  opacity: 1; }
-
-/* line 454, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
-#Slide4:checked + #s4 {
-  opacity: 1; }
-
-/* line 458, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
-.overflow-wrapper {
-  width: 400%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow-y: hidden;
-  z-index: 1;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-
-/* line 472, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
-.slide img {
-  width: 25%;
-  float: left; }
 
 /* Footer */
-/* line 479, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+/* line 456, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
 footer {
   height: 120px;
   background-color: #444444;
   text-align: center; }
-  /* line 483, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+  /* line 460, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
   footer .contact_info {
     float: right;
     text-align: right;
     padding: 30px 50px 0 0; }
-    /* line 487, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+    /* line 464, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
     footer .contact_info h3 {
       font-size: 16px;
       letter-spacing: 1px;
       color: #ffffff; }
-    /* line 492, /Users/SeoyoungSeung/Documents/Flearning/week06/02_myportfolio/css/style_01.scss */
+    /* line 469, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
     footer .contact_info p, footer .contact_info a {
       font-size: 14px;
       line-height: 24px;

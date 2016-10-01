@@ -16,6 +16,18 @@ background: $main_color;
 color: #ffffff;  
 }
 
+.indicator {
+  padding: 6px;
+  background: #999999;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  border-radius: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 999;
+}
+
 /**
  * Eric Meyer's Reset CSS v2.0 
 (http://meyerweb.com/eric/tools/css/reset/)
@@ -348,90 +360,86 @@ body::-webkit-scrollbar-track{
   background: #e8ecef;
   overflow: hidden;
   float: left;
+    .inner-wrapper {
+      width: 70%;
+      height: 570px;
+      position: absolute;
+      top: 40px;
+      left: 100px;
+      margin-bottom: 0px;
+      overflow: hidden;
+        .control {
+          display: none;
+        }
+        #s1 {
+          @extend .indicator;
+          margin-left: -36px;
+        }
+        #s2 {
+          @extend .indicator;
+          margin-left: -12px;
+        }
+        #s3 {
+          @extend .indicator;
+          margin-left: 12px;
+        }
+        #s4 {
+          @extend .indicator;
+          margin-left: 36px;
+        }
+        #s5 {
+          @extend .indicator;
+          margin-left: -36px;
+        }
+        #s6 {
+          @extend .indicator;
+          margin-left: -12px;
+        } 
+        #s7 {
+          @extend .indicator;
+          margin-left: -36px;
+        }
+        #s8 {
+          @extend .indicator;
+          margin-left: -12px;
+        }
+        #s9 {
+          @extend .indicator;
+          margin-left: 12px;
+        }
+      
+        #s1:hover, #s2:hover, #s3:hover, #s4:hover #s5:hover, #s6:hover, #s7:hover, #s8:hover, #s9:hover {
+          opacity: .50;
+        }
+        .overflow-wrapper {
+          width: 400%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          overflow-y: hidden;
+          z-index: 1;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+            .slide img {
+            width: 25%;
+            float: left;
+          }
+        }
+      }
 }
 
-#s1,s5 {
-  padding: 6px;
-  background: #999999;
-  position: absolute;
-  left: 50%;
-  bottom: 25px;
-  margin-left: -36px;
-  border-radius: 20px;
-  opacity: 0.3;
-  cursor: pointer;
-  z-index: 999;
-}
-
-#s2,s6 {
-  padding: 6px;
-  background: #999999;
-  position: absolute;
-  left: 50%;
-  bottom: 25px;
-  margin-left: -12px;
-  border-radius: 20px;
-  opacity: 0.3;
-  cursor: pointer;
-  z-index: 999;
-}
-
-#s3,s7 {
-  padding: 6px;
-  background: #999999;
-  position: absolute;
-  left: 50%;
-  bottom: 25px;
-  margin-left: 12px;
-  border-radius: 20px;
-  opacity: 0.3;
-  cursor: pointer;
-  z-index: 999;
-}
-
-#s4,s8 {
-  padding: 6px;
-  background: #999999;
-  position: absolute;
-  left: 50%;
-  bottom: 25px;
-  margin-left: 36px;
-  border-radius: 20px;
-  opacity: 0.3;
-  cursor: pointer;
-  z-index: 999;
-}
-
-#s1:hover,
-#s2:hover,
-#s3:hover,
-#s4:hover {
-  opacity: .50;
-}
-
-.inner-wrapper {
-  width: 70%;
-  height: 570px;
-  position: absolute;
-  top: 40px;
-  left: 100px;
-  margin-bottom: 0px;
-  overflow: hidden;
-}
-
-.control {
-  display: none;
-}
-
-#Slide1:checked ~ .overflow-wrapper {
+#Slide1:checked, #Slide5:checked, #Slide7:checked ~ .overflow-wrapper {
   margin-left: 0%;
 }
 
-#Slide2:checked ~ .overflow-wrapper {
+#Slide2:checked, #Slide6:checked, #Slide8:checked ~ .overflow-wrapper {
   margin-left: -100%;
 }
 
-#Slide3:checked ~ .overflow-wrapper {
+#Slide3:checked, #Slide9:checked ~ .overflow-wrapper {
   margin-left: -200%;
 }
 
@@ -439,39 +447,8 @@ body::-webkit-scrollbar-track{
   margin-left: -300%;
 }
 
-#Slide1:checked + #s1, #Slide5:checked + #s5, #Slide6:checked + #s6, #Slide7:checked + #s7, #Slide8:checked + #s8 {
+#Slide1:checked + #s1, #Slide2:checked + #s2, #Slide3:checked + #s3, #Slide4:checked + #s4, #Slide5:checked + #s5, #Slide6:checked + #s6, #Slide7:checked + #s7, #Slide8:checked + #s8, #Slide9:checked + #s9 {
   opacity: 1;
-}
-
-#Slide2:checked + #s2 {
-  opacity: 1;
-}
-
-#Slide3:checked + #s3 {
-  opacity: 1;
-}
-
-#Slide4:checked + #s4 {
-  opacity: 1;
-}
-
-.overflow-wrapper {
-  width: 400%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow-y: hidden;
-  z-index: 1;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.slide img {
-  width: 25%;
-  float: left;
 }
 
 /* Footer */
