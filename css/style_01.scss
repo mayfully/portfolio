@@ -102,13 +102,7 @@ body::-webkit-scrollbar-track{
 
   
 /* section 1 */
-.main_banner {
-  position: relative;
-  width: 100%;
-  background-color: #fafafa;
-  overflow: hidden;
-  box-sizing: border-box;
-  height: 100vh;
+
   nav {
     position: fixed;
     top: 0;
@@ -119,21 +113,16 @@ body::-webkit-scrollbar-track{
     line-height: 60px;
     background-color: rgba(255,255,255,0.6);
     text-align: right;
+    list-style-type: none;
     z-index: 999;
-    h1 {
-      display: inline-block;
-      float: left;
-      margin: 0 0 0 50px; 
+    span {
       font-size: $font_lv2; 
-      a {
-        font-family: $font_family;
-        color: $main_color;
-        cursor: pointer;   
-      } 
+      font-family: $font_family;
+      color: $main_color;
+      cursor: pointer;
     }
     ul {
-      display: inline-block;
-      float: right;
+      margin-left: 20px;
       li {
         float: left;
         font-size: $font_lv4;
@@ -148,6 +137,11 @@ body::-webkit-scrollbar-track{
           border-bottom: 2px solid $main_color;  
         }
         a {
+          display: inline-block;
+          color: red;
+          text-align: center;
+          text-decoration: none;
+          transition: 0.3s;
           color: rgba(0, 0, 0, 0.6);
           &:hover {
             color: $main_color;
@@ -161,46 +155,52 @@ body::-webkit-scrollbar-track{
       }
     } 
   }
-}
 
-.main_banner .banner_text {
-  display: inline-block;
-  margin: 50%;
-  h1 {
-    position: absolute;
-    top: 45%;
-    font-family: $font_family;
-    font-size: $font_lv1;
-    line-height: 42px;
-    letter-spacing: 2px;
-    color: $black_lv1;
-    white-space: nowrap; /* typing effect */
-    overflow: hidden;
-    width: 700px;
-    padding: 0;
-    animation: type 3.8s steps(60, end); 
-  }
-  h1:nth-child(2) {
-    animation: type2 7.8s steps(60, end);
-    margin-top: 50px;
-  }
-  span {
-    animation: blink 1s infinite;
-    color: $main_color;
-  }
-  @keyframes type { 
-    from { width: 0; } 
-  } 
-  @keyframes type2 {
-    0%{width: 0;}
-    50%{width: 0;}
-    100%{ width: 100;} 
-  } 
-  @keyframes blink {
-    to{opacity: .0;}
+.main_banner  {
+  position: relative;
+  width: 100%;
+  background-color: #fafafa;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 100vh;
+  .banner_text {
+    display: inline-block;
+    margin: 50%;
+    h1 {
+      position: absolute;
+      top: 45%;
+      font-family: $font_family;
+      font-size: $font_lv1;
+      line-height: 42px;
+      letter-spacing: 2px;
+      color: $black_lv1;
+      white-space: nowrap; /* typing effect */
+      overflow: hidden;
+      width: 700px;
+      padding: 0;
+      animation: type 3.8s steps(60, end); 
+    }
+    h1:nth-child(2) {
+      animation: type2 7.8s steps(60, end);
+      margin-top: 50px;
+    }
+    span {
+      animation: blink 1s infinite;
+      color: $main_color;
+    }
+    @keyframes type { 
+      from { width: 0; } 
+    } 
+    @keyframes type2 {
+      0%{width: 0;}
+      50%{width: 0;}
+      100%{ width: 100;} 
+    } 
+    @keyframes blink {
+      to{opacity: .0;}
+    }
   }
 }
-
 /* mouse effect */
 
 @-webkit-keyframes scroll-inner {
@@ -595,6 +595,35 @@ footer {
     }
   }
 
+/* Smartphones (portrait and landscape) ----------- */
 
-
+@media screen and (min-width: 320px) and (max-width:480px){
+  nav {
+    span {
+      font-size: $font_lv3; 
+    }
+    ul {
+      margin: 0 0 0 20px;
+      li {
+        font-size: $font_lv5;
+        margin: 0px 20px 0 0;
+      }
+    }
+  }
+  .aboutme {
+  padding: 80px 0; 
+  text-align: center;
+  background-color: #ececec;
+  h1 {
+    font-family: $font_family;
+    font-size: none;
+    letter-spacing: 2px;
+    color: $black_lv1;
+  }
+}
+  .main_banner .banner_text {
+    margin: 0px;
+    line-height: 24px;
+  }
+}
 
