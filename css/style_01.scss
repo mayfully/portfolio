@@ -551,8 +551,6 @@ body::-webkit-scrollbar-track{
         }
       }
 
-
-  
   #Slide7:checked ~ .overflow-wrapper {
     margin-left: 0%;
   }
@@ -576,6 +574,8 @@ footer {
   height: 120px;
   background-color: #444444;
   text-align: center;
+	float: right;
+	width: 100%;
   .contact_info {
     float: right;
     text-align: right;
@@ -611,20 +611,36 @@ footer {
       }
     }
   }
-  .aboutme {
-  padding: 80px 0; 
-  text-align: center;
-  background-color: #ececec;
-  h1 {
-    font-family: $font_family;
-    font-size: none;
-    letter-spacing: 2px;
-    color: $black_lv1;
-  }
+  .main_banner .banner_text h1 {
+		font-size: 24px; 
+	}
+	
+	#slider-wrapper, #slider-wrapper-1, #slider-wrapper-2 {
+		width: 100%;
+	}
+	
+	.portfolio_area .pf_list .right_area {
+		position: static;
+		width: auto;
+		clear: both;
+		.info {
+			margin: 30px;
+		}
+	}
+	#slider-wrapper .inner-wrapper {
+		position: static;
+	}
+	#slider-wrapper-1 .inner-wrapper {
+		position: static;
+	}
+	#slider-wrapper-2 .inner-wrapper {
+		position: static;
+	}
+	.slide img {
+		padding-top:80px;
+	}
+	.portfolio_area .pf_list .left_area {
+		width: 100%;
+		position: static;
+	}
 }
-  .main_banner .banner_text {
-    margin: 0px;
-    line-height: 24px;
-  }
-}
-
