@@ -533,6 +533,7 @@ nav {
       #slider-wrapper-2 .inner-wrapper .overflow-wrapper .slide img {
         width: 25%;
         float: left; }
+<<<<<<< Updated upstream
   /* line 554, /Users/pluto0206/Downloads/mayfully.gitbub.io/css/style_01.scss */
   #slider-wrapper-2 #Slide7:checked ~ .overflow-wrapper {
     margin-left: 0%; }
@@ -543,10 +544,23 @@ nav {
   #slider-wrapper-2 #Slide9:checked ~ .overflow-wrapper {
     margin-left: -200%; }
   /* line 566, /Users/pluto0206/Downloads/mayfully.gitbub.io/css/style_01.scss */
+=======
+  /* line 554, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  #slider-wrapper-2 #Slide7:checked ~ .overflow-wrapper {
+    margin-left: 0%; }
+  /* line 558, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  #slider-wrapper-2 #Slide8:checked ~ .overflow-wrapper {
+    margin-left: -100%; }
+  /* line 562, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  #slider-wrapper-2 #Slide9:checked ~ .overflow-wrapper {
+    margin-left: -200%; }
+  /* line 566, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+>>>>>>> Stashed changes
   #slider-wrapper-2 #Slide7:checked + #s7, #slider-wrapper-2 #Slide8:checked + #s8, #slider-wrapper-2 #Slide9:checked + #s9 {
     opacity: 1; }
 
 /* Footer */
+<<<<<<< Updated upstream
 /* line 573, /Users/pluto0206/Downloads/mayfully.gitbub.io/css/style_01.scss */
 footer {
   height: 120px;
@@ -555,16 +569,32 @@ footer {
   float: right;
   width: 100%; }
   /* line 579, /Users/pluto0206/Downloads/mayfully.gitbub.io/css/style_01.scss */
+=======
+/* line 573, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+footer {
+  height: 120px;
+  background-color: #444444;
+  text-align: center; }
+  /* line 577, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+>>>>>>> Stashed changes
   footer .contact_info {
     float: right;
     text-align: right;
     padding: 30px 50px 0 0; }
+<<<<<<< Updated upstream
     /* line 583, /Users/pluto0206/Downloads/mayfully.gitbub.io/css/style_01.scss */
+=======
+    /* line 581, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+>>>>>>> Stashed changes
     footer .contact_info h3 {
       font-size: 16px;
       letter-spacing: 1px;
       color: #ffffff; }
+<<<<<<< Updated upstream
     /* line 588, /Users/pluto0206/Downloads/mayfully.gitbub.io/css/style_01.scss */
+=======
+    /* line 586, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+>>>>>>> Stashed changes
     footer .contact_info p, footer .contact_info a {
       font-size: 14px;
       line-height: 24px;
@@ -574,6 +604,7 @@ footer {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media screen and (min-width: 320px) and (max-width: 480px) {
+<<<<<<< Updated upstream
   /* line 603, /Users/pluto0206/Downloads/mayfully.gitbub.io/css/style_01.scss */
   nav span {
     font-size: 18px; }
@@ -614,5 +645,20 @@ footer {
   .portfolio_area .pf_list .left_area {
     width: 100%;
     position: static; } }
+=======
+  /* line 601, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  nav span {
+    font-size: 18px; }
+  /* line 604, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  nav ul {
+    margin: 0 0 0 20px; }
+    /* line 606, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+    nav ul li {
+      font-size: 12px;
+      margin: 0px 20px 0 0; }
+  /* line 612, /Users/SeoyoungSeung/Documents/mayfully.gitbub.io/css/style_01.scss */
+  .main_banner .banner_text h1 {
+    font-size: 24px; } }
+>>>>>>> Stashed changes
 
 /*# sourceMappingURL=style_01.css.map */
