@@ -523,11 +523,11 @@ body::-webkit-scrollbar-track{
         }
         #s9 {
           @extend .indicator;
-          margin-left: -36px;
+          margin-left: -20px;
         }
         #s10 {
           @extend .indicator;
-          margin-left: -12px;
+          margin-left: 0px;
         }
         #s9:hover, #s10:hover {
           opacity: .50;
