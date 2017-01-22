@@ -299,29 +299,20 @@ body::-webkit-scrollbar-track{
         background-position: center;
         background-repeat: no-repeat;
       }
-    
-      .left_area_01{
-        background-image: url(../img/01.png);
-        background-size: 60%;
-      }
-      .left_area_02{
-        background-image: url(../img/02.png);
-        background-color: #f5f2f2;
-        background-size: 60%;
-      }
-      .left_area_03{
-        background-image: url(../img/04.png);
-        background-color: #e8ecef;
-        background-size: 60%;
-      }
       .left_area_04{
         background-image: url(../img/04.png);
         background-color: #f5f2f2;
         background-size: 80%;
       }
+      .left_area_05{
+        background-image: url(../img/05.png);
+        background-color: #e8ecef;
+;
+        background-size: 80%;
+      }
       .right_area {
         position: relative;
-        top: 30%;
+        top: 25%;
         width: 50%;
         float: right;
         text-align: left;  
@@ -354,7 +345,6 @@ body::-webkit-scrollbar-track{
 #slider-wrapper{
   width: 50%;
   height: 600px;
-  //margin: 50px auto;
   position: relative;
   margin-bottom: 0px;
   background: #e8ecef;
@@ -435,7 +425,6 @@ body::-webkit-scrollbar-track{
 #slider-wrapper-1{
   width: 50%;
   height: 600px;
-  //margin: 50px auto;
   position: relative;
   margin-bottom: 0px;
   background: #e8ecef;
@@ -454,14 +443,22 @@ body::-webkit-scrollbar-track{
         }
         #s5 {
           @extend .indicator;
-          margin-left: -24px;
+          margin-left: -36px;
         }
         #s6 {
           @extend .indicator;
-        
+          margin-left: -12px;
+        }
+        #s7 {
+          @extend .indicator;
+          margin-left: 12px;
+        }
+        #s8 {
+          @extend .indicator;
+          margin-left: 36px;
         }
         
-        #s5:hover, #s6:hover {
+        #s5:hover, #s6:hover, #s7:hover, #s8:hover {
           opacity: .50;
         }
         .overflow-wrapper {
@@ -491,8 +488,16 @@ body::-webkit-scrollbar-track{
   #Slide6:checked ~ .overflow-wrapper {
     margin-left: -100%;
   }
+  
+  #Slide7:checked ~ .overflow-wrapper {
+    margin-left: -200%;
+  }
 
-  #Slide5:checked + #s5, #Slide6:checked + #s6 {
+  #Slide8:checked ~ .overflow-wrapper {
+    margin-left: -300%;
+  }
+
+  #Slide5:checked + #s5, #Slide6:checked + #s6, #Slide7:checked + #s7, #Slide8:checked + #s8 {
     opacity: 1;
   }
 }
@@ -500,7 +505,6 @@ body::-webkit-scrollbar-track{
 #slider-wrapper-2{
   width: 50%;
   height: 600px;
-  //margin: 50px auto;
   position: relative;
   margin-bottom: 0px;
   background: #e8ecef;
@@ -517,19 +521,15 @@ body::-webkit-scrollbar-track{
         .control {
           display: none;
         }
-        #s7 {
+        #s9 {
           @extend .indicator;
           margin-left: -36px;
         }
-        #s8 {
+        #s10 {
           @extend .indicator;
           margin-left: -12px;
         }
-        #s9 {
-          @extend .indicator;
-          margin-left: 12px;
-        }
-        #s7:hover, #s8:hover, #s9:hover {
+        #s9:hover, #s10:hover {
           opacity: .50;
         }
         .overflow-wrapper {
@@ -551,19 +551,15 @@ body::-webkit-scrollbar-track{
         }
       }
 
-  #Slide7:checked ~ .overflow-wrapper {
+  #Slide9:checked ~ .overflow-wrapper {
     margin-left: 0%;
   }
 
-  #Slide8:checked ~ .overflow-wrapper {
+  #Slide10:checked ~ .overflow-wrapper {
     margin-left: -100%;
   }
   
-  #Slide9:checked ~ .overflow-wrapper {
-    margin-left: -200%;
-  }
-
-  #Slide7:checked + #s7, #Slide8:checked + #s8, #Slide9:checked + #s9 {
+  #Slide9:checked + #s9, #Slide10:checked + #s10 {
     opacity: 1;
   }
 }
@@ -612,7 +608,6 @@ footer {
     }
   }
   .main_banner .banner_text h1 {
-<<<<<<< Updated upstream
 		font-size: 24px; 
 	}
 	
@@ -645,9 +640,3 @@ footer {
 		position: static;
 	}
 }
-=======
-    font-size: 24px;
-  }
-}
-
->>>>>>> Stashed changes
