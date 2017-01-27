@@ -613,6 +613,7 @@ footer {
   /* line 638, /Users/SeoyoungSeung/Documents/portfolio/css/style_01.scss */
   .portfolio_area .pf_list .left_area {
     width: 100%;
-    position: static; } }
+    position: static;
+    height: 200px; } }
 
 /*# sourceMappingURL=style_01.css.map */
